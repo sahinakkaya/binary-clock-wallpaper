@@ -22,7 +22,7 @@ python3 binary_clock_wallpaper.py
 ```
 
 ### Running it as a cronjob
-You can run the helper script as a cronjob to update your wallpaper every minute. The helper script uses `nitrogen` as wallpaper setter. Do not forget to change it if you use another program.
+You can run the helper script, `set_binary_wallpaper.sh`, as a cronjob to update your wallpaper every minute. The helper script uses `nitrogen` as wallpaper setter. Do not forget to change it if you use another program.
 
 ```
 * * * * * /path/to/set_binary_wallpaper.sh
