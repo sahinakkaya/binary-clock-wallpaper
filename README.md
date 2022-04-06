@@ -3,7 +3,7 @@
 A python script to generate wallpaper that shows time in binary. 
 
 Example image when the time is 7:39 PM: 
-![Example image](https://raw.githubusercontent.com/Asocia/binary-clock-wallpaper/main/example.png) 
+![Example image](https://raw.githubusercontent.com/Asocia/binary-clock-wallpaper/main/img/example.png) 
 
 ### How to read it?
 The image shows `0111 100111 1` in binary. If you convert it to decimal you will get
@@ -21,7 +21,7 @@ pip3 install -r requirements.txt
 ```
 
 ### Usage
-Run the following command and a file named `result.png` will be created. You can use that file to set your wallpaper.
+Run the following command and a file named `result.png` will be created under `img` directory. You can use that file to set your wallpaper.
 ```
 python3 binary_clock_wallpaper.py
 ```

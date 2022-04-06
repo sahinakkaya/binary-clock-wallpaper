@@ -3,8 +3,8 @@ from PIL import Image, ImageDraw
 from datetime import datetime
 
 base_dir = os.path.dirname(__file__)
-base_image_path = os.path.join(base_dir, "base.png")
-result_image_path = os.path.join(base_dir, "result.png")
+base_image_path = os.path.join(base_dir, "img", "base.png")
+result_image_path = os.path.join(base_dir, "img", "result.png")
 
 
 def draw_unit(unit, xs, y, size):
