@@ -25,6 +25,10 @@ Run the following command and a file named `result.png` will be created under `i
 ```
 python3 binary_clock_wallpaper.py
 ```
+The accent color can be specified from the command line using the `--color` option:
+```
+python3 binary_clock_wallpaper.py --color "#35d8dd"
+```
 
 ### Running it as a cronjob
 You can run the helper script, `set_binary_wallpaper.sh`, as a cronjob to update your wallpaper every minute. The helper script uses `nitrogen` as wallpaper setter. Do not forget to change it if you use another program.
