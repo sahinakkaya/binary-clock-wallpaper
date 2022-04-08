@@ -1,6 +1,6 @@
 import os
 import sys
-import re
+
 from PIL import Image, ImageDraw
 from datetime import datetime
 
@@ -9,10 +9,9 @@ base_image_path = os.path.join(base_dir, "img", "base.png")
 result_image_path = os.path.join(base_dir, "img", "result.png")
 
 
-def draw_unit(unit, xs, y, size, accent_color="#FF2536"):
-    print(unit)
+def draw_unit(unit, xs, y, size, accent_color):
     dots = bin(int(unit))[2:].zfill(len(xs))
-    print(dots)
+    print("{} -> {}".format(unit, dots))
     for dot, x in zip(dots, xs):
         color = accent_color if dot == "1" else "#807675"
         draw.rectangle((x, y, x + size, y + size), fill=color)
@@ -24,12 +23,12 @@ am_pm = am_pm == "PM"
 
 accent_color = "#FF2536"
 args = sys.argv[1:]
-if len(args) != 0:
+if len(args):
     try:
         if args[0] == "--color":
             accent_color = args[1]
     except IndexError:
-        print('error: Invalid command line arguments, using default color value')
+        print("error: Invalid command line arguments, using default color value")
 
 hour_xs = [543, 733, 940, 1133]
 hour_y = 292
