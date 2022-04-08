@@ -25,10 +25,19 @@ Run the following command and a file named `result.png` will be created under `i
 ```
 python3 binary_clock_wallpaper.py
 ```
-The accent color can be specified from the command line using the `--color` option. Color can be either hex value or a generic color name. If it is a hex value it needs to be specified in quotes:
+
+#### Change colors
+You can change any color to match it with your environment. A color can be either hex value or a generic color name. 
+
 ```
-python3 binary_clock_wallpaper.py --color "#35d8dd"
-python3 binary_clock_wallpaper.py --color steelblue
+python3 binary_clock_wallpaper.py --accent-color "#35d8dd"
+python3 binary_clock_wallpaper.py --accent-color steelblue --wire-color gray --bg-color "#0f0f17"
+```
+
+#### Use 12 hour format
+Default is 24-hour time. Change it like this if you want to use 12-hour time:
+```
+python3 binary_clock_wallpaper.py --use-12-hour
 ```
 
 ### Running it as a cronjob
