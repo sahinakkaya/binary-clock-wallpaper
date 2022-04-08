@@ -52,3 +52,7 @@ You can run the helper script, `set_binary_wallpaper.sh`, as a cronjob to update
 ```
 
 
+### Credits
+- [Jake@Linux](https://www.youtube.com/channel/UC1yGcBvdPGxRIMT1yo_bKIQ) for giving me an inspiration to write this script in [one of his videos](https://www.youtube.com/watch?v=RJmiWfSVW8Q).
+- [@loicreynier](https://github.com/loicreynier) for adding accent color support.
+
