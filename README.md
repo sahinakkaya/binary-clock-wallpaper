@@ -25,9 +25,10 @@ Run the following command and a file named `result.png` will be created under `i
 ```
 python3 binary_clock_wallpaper.py
 ```
-The accent color can be specified from the command line using the `--color` option:
+The accent color can be specified from the command line using the `--color` option. Color can be either hex value or a generic color name. If it is a hex value it needs to be specified in quotes:
 ```
 python3 binary_clock_wallpaper.py --color "#35d8dd"
+python3 binary_clock_wallpaper.py --color steelblue
 ```
 
 ### Running it as a cronjob
