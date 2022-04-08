@@ -7,7 +7,7 @@ else
     python=python
 fi
 
-$python $base_dir/binary_clock_wallpaper.py
+$python $base_dir/binary_clock_wallpaper.py "$@"
 
 ## Use any wallpaper setter of your choice. I use nitrogen
 nitrogen --set-zoom-fill $base_dir/img/result.png

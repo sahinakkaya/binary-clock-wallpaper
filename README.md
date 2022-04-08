@@ -46,5 +46,9 @@ You can run the helper script, `set_binary_wallpaper.sh`, as a cronjob to update
 ```
 * * * * * /path/to/set_binary_wallpaper.sh
 ```
+**Tip**: All the arguments passed to this script will be passed to python. So you can do the following to see the changes immediately while tweaking the colors:
+```
+./set_binary_wallpaper.sh --accent-color greenyellow --wire-color gray
+```
 
 
