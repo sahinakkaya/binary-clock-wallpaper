@@ -44,6 +44,8 @@ python3 binary_clock_wallpaper.py --use-12-hour
 You can run the helper script, `set_binary_wallpaper.sh`, as a cronjob to update your wallpaper every minute. The helper script uses `nitrogen` as wallpaper setter. Do not forget to change it if you use another program.
 
 ```
+# Run "crontab -e" and add the following line to that file.
+
 * * * * * /path/to/set_binary_wallpaper.sh
 ```
 **Tip**: All the arguments passed to this script will be passed to python. So you can do the following to see the changes immediately while tweaking the colors:
