@@ -16,11 +16,14 @@ parser.add_argument(
     "--wire-color", type=str, default="#807675", help="the color of the wires"
 )
 parser.add_argument("--bg-color", type=str, default="#0f0f17", help="background color")
-parser.add_argument(
-    "--use-12-hour",
-    action=argparse.BooleanOptionalAction,
-    help="whether or not to use 12 hour time. Default is 24 hour time.",
+mutex_group = parser.add_mutually_exclusive_group(required=False)
+mutex_group.add_argument(
+    "--use-12-hour", action="store_true", help="use 12 hour format"
 )
+mutex_group.add_argument(
+    "--no-use-12-hour", action="store_false", help="use 24 hour format. (default)"
+)
+parser.set_defaults(use_12_hour=False)
 
 # Parse the arguments
 args = parser.parse_args()
