@@ -80,3 +80,16 @@ if use_12_hour:
 # save the result
 result_image_path = os.path.join(base_dir, "img", "result.png")
 canvas.save(result_image_path, quality=95)
+
+# windows compatibility
+from sys import platform
+
+if platform == "win32":
+    import ctypes
+
+    SPI_SETDESKWALLPAPER = 20
+    img_path_win = os.path.join(os.getcwd(), "img", "result.png")
+    png = Image.open(img_path_win).convert("RGB")
+    png.save(os.path.join(os.getcwd(), "img", "result.jpg"))
+    jpg = os.path.join(os.getcwd(), "img", "result.jpg")
+    ctypes.windll.user32.SystemParametersInfoW(SPI_SETDESKWALLPAPER, 0, jpg, 0)
