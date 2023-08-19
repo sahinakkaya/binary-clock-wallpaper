@@ -2,12 +2,15 @@
 
 A python script to generate wallpaper that shows time in binary. 
 
-Example image when the time is 7:39 PM: 
-![Example image](https://raw.githubusercontent.com/Asocia/binary-clock-wallpaper/main/img/example.png) 
+Example picture when the time is 7:39 PM: 
+<img alt="Example picture" src="https://raw.githubusercontent.com/sahinakkaya/binary-clock-wallpaper/main/img/example.png" width=700/>
+
 
 ### How to read it?
-The image shows `0111 100111 1` in binary. If you convert it to decimal you will get
-`4+2+1 32+4+2+1 1` which means `7:39 PM`.
+As you can see from the annotated picture below, the clock shows `0111 100111 1` in binary. If you convert it to decimal you will get
+`4+2+1 32+4+2+1 1` which means `7:39 PM`. 
+
+<img alt="annotated-example" src="https://github.com/sahinakkaya/binary-clock-wallpaper/assets/32161460/8a53b6ef-550b-451b-bfa5-059f41eafe08" width=700/>
 
 ### Setting up the environment
 First create a virtual environment for python and activate it:
